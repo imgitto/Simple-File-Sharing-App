@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="app">
+		<div class="screen join-screen active">
+			<div class="form">
+				<h2>Share your files securely</h2>
+				<div class="form-input">
+					<button id="sender-start-con-btn">Create share room</button>
+				</div>
+				<div class="form-input" id="join-id">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="screen fs-screen">
+			<div class="file-input">
+				<label for="file-input">
+					Click here to Select files for sharing
+				</label>
+				<input type="file" id="file-input">
+			</div>
+			<div class="files-list">
+				<div class="title">Shared files</div>
+				<div class="item">
+					<div class="progress">0%</div>
+					<div class="filename">Abc.txt</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
